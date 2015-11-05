@@ -21,6 +21,10 @@ $(document).ready(function() {
 		$("#setup").show();
 	});
 
+	$(".final").click(function() {
+		$(this).toggleClass("done");
+	});
+
 	$("#textarea-create-free").click(function() {
 		var data = $("#textarea-data").val().split("\n");
 		if (data.length < 24) {
@@ -44,7 +48,6 @@ $(document).ready(function() {
 			}
 			$("#board" + i).text(datum);
 		}
-		console.log(findata);
 		$("#setup").hide();
 		$("#board").show();
 	});
@@ -64,11 +67,15 @@ $(document).ready(function() {
 			data.splice(rand, 1);
 			$("#board" + i).text(datum);
 		}
-		console.log(findata);
 		$("#setup").hide();
 		$("#board").show();
 	});
 	$("#grid-create").click(function() {
-
+		for (var i = 0; i < 25; i++) {
+			var datum = $("#setup" + i).val();
+			$("#board" + i).text(datum);
+		}
+		$("#setup").hide();
+		$("#board").show();
 	});
 });

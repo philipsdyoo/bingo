@@ -1,3 +1,48 @@
-textarea {
+#container {
+	font-family: Helvetica;
+	text-align: center;
+}
+#textarea-data{
 	resize: none;
+}
+#setup-table {
+	margin-left: auto;
+	margin-right: auto;
+}
+.final {
+	background-color: #ddd;
+	padding: 25px 25px 25px 25px;
+	text-align: center;
+	width: 20%;
+	border-radius: 5px;
+}
+.final:hover {
+	background-color: #ccc;
+}
+.done, .done:hover {
+	background-color: #f44;
+}
+button {
+	font-family: inherit;
+	background-color: #60B044;
+	background-image: -webkit-linear-gradient(top, #8ADD6D, #60B044);
+	background-image: -moz-linear-gradient(top, #8ADD6D, #60B044);
+	background-image: -ms-linear-gradient(top, #8ADD6D, #60B044);
+	background-image: -o-linear-gradient(top, #8ADD6D, #60B044);
+	background-image: linear-gradient(to bottom, #8ADD6D, #60B044);
+	border: 1px solid #D5D5D5;
+	border-radius: 5px;
+	font-weight: bold;
+	padding: 4px 4px 4px 4px;
+	color: white;
+	/*http://css3buttongenerator.com/*/
+}
+button:hover {
+	background-color: #609044;
+	border: 1px solid #AAAAAA;
+	background-image: -webkit-linear-gradient(top, #60B044, #609044);
+	background-image: -moz-linear-gradient(top, #60B044, #609044);
+	background-image: -ms-linear-gradient(top, #60B044, #609044);
+	background-image: -o-linear-gradient(top, #60B044, #609044);
+	background-image: linear-gradient(to bottom, #60B044, #609044);
 }

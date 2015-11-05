@@ -9,22 +9,73 @@
 	<script	src="js/main.js"></script>
 
 	<body>
-		<div id="setup">
-			<div id="choose">
-				<p>Choose a method of entering your data: Text Area (random arrangement) or Grid (specific arrangement)</p>
-				<button id="chooseTextArea">Text Area</button>
-				<button id="chooseGrid">Grid</button>
+		<div id="container">
+			<div id="setup">
+				<div id="choose">
+					<h2>Choose a method of entering your data:</h2>
+					<p>Text Area (random arrangement) or Grid (specific arrangement)</p>
+					<button id="chooseTextArea">Text Area</button>
+					<button id="chooseGrid">Grid</button>
+				</div>
+				<div id="setup-textarea">
+					<h3>Enter your data in the text area.</h3>
+					<textarea id="textarea-data" rows="24" cols="50"></textarea>
+					<br/>
+					<button class="goback">Go Back</button>
+					<button id="textarea-create-free">Create with Free Space</button>
+					<button id="textarea-create-nofree">Create without Free Space</button>
+				</div>
+				<div id="setup-grid">
+					<h3>Enter your data in the grid.</h3>
+					<table id="setup-table">
+						<tr>
+							<th>B</th>
+							<th>I</th>
+							<th>N</th>
+							<th>G</th>
+							<th>O</th>
+						</tr>
+						<tr>
+							<td><input type="text" id="setup0"></td>
+							<td><input type="text" id="setup1"></td>
+							<td><input type="text" id="setup2"></td>
+							<td><input type="text" id="setup3"></td>
+							<td><input type="text" id="setup4"></td>
+						</tr>
+						<tr>
+							<td><input type="text" id="setup5"></td>
+							<td><input type="text" id="setup6"></td>
+							<td><input type="text" id="setup7"></td>
+							<td><input type="text" id="setup8"></td>
+							<td><input type="text" id="setup9"></td>
+						</tr>
+						<tr>
+							<td><input type="text" id="setup10"></td>
+							<td><input type="text" id="setup11"></td>
+							<td><input type="text" id="setup12"></td>
+							<td><input type="text" id="setup13"></td>
+							<td><input type="text" id="setup14"></td>
+						</tr>
+						<tr>
+							<td><input type="text" id="setup15"></td>
+							<td><input type="text" id="setup16"></td>
+							<td><input type="text" id="setup17"></td>
+							<td><input type="text" id="setup18"></td>
+							<td><input type="text" id="setup19"></td>
+						</tr>
+						<tr>
+							<td><input type="text" id="setup20"></td>
+							<td><input type="text" id="setup21"></td>
+							<td><input type="text" id="setup22"></td>
+							<td><input type="text" id="setup23"></td>
+							<td><input type="text" id="setup24"></td>
+						</tr>
+					</table>
+					<button class="goback">Go Back</button>
+					<button id="grid-create">Create</button>
+				</div>
 			</div>
-			<div id="setup-textarea">
-				<p>Enter your data in the text area.</p>
-				<textarea id="textarea-data" rows="24" cols="50"></textarea>
-				<br/>
-				<button class="goback">Go Back</button>
-				<button id="textarea-create-free">Create with Free Space</button>
-				<button id="textarea-create-nofree">Create without Free Space</button>
-			</div>
-			<div id="setup-grid">
-				<p>Enter your data in the grid.</p>
+			<div id="board">
 				<table>
 					<tr>
 						<th>B</th>
@@ -34,92 +85,45 @@
 						<th>O</th>
 					</tr>
 					<tr>
-						<td><input type="text" id="setup0"></td>
-						<td><input type="text" id="setup1"></td>
-						<td><input type="text" id="setup2"></td>
-						<td><input type="text" id="setup3"></td>
-						<td><input type="text" id="setup4"></td>
+						<td id="board0" class="final">FREE</td>
+						<td id="board1" class="final">FREE</td>
+						<td id="board2" class="final">FREE</td>
+						<td id="board3" class="final">FREE</td>
+						<td id="board4" class="final">FREE</td>
 					</tr>
 					<tr>
-						<td><input type="text" id="setup5"></td>
-						<td><input type="text" id="setup6"></td>
-						<td><input type="text" id="setup7"></td>
-						<td><input type="text" id="setup8"></td>
-						<td><input type="text" id="setup9"></td>
+						<td id="board5" class="final">FREE</td>
+						<td id="board6" class="final">FREE</td>
+						<td id="board7" class="final">FREE</td>
+						<td id="board8" class="final">FREE</td>
+						<td id="board9" class="final">FREE</td>
 					</tr>
 					<tr>
-						<td><input type="text" id="setup10"></td>
-						<td><input type="text" id="setup11"></td>
-						<td><input type="text" id="setup12"></td>
-						<td><input type="text" id="setup13"></td>
-						<td><input type="text" id="setup14"></td>
+						<td id="board10" class="final">FREE</td>
+						<td id="board11" class="final">FREE</td>
+						<td id="board12" class="final">FREE</td>
+						<td id="board13" class="final">FREE</td>
+						<td id="board14" class="final">FREE</td>
 					</tr>
 					<tr>
-						<td><input type="text" id="setup15"></td>
-						<td><input type="text" id="setup16"></td>
-						<td><input type="text" id="setup17"></td>
-						<td><input type="text" id="setup18"></td>
-						<td><input type="text" id="setup19"></td>
+						<td id="board15" class="final">FREE</td>
+						<td id="board16" class="final">FREE</td>
+						<td id="board17" class="final">FREE</td>
+						<td id="board18" class="final">FREE</td>
+						<td id="board19" class="final">FREE</td>
 					</tr>
 					<tr>
-						<td><input type="text" id="setup20"></td>
-						<td><input type="text" id="setup21"></td>
-						<td><input type="text" id="setup22"></td>
-						<td><input type="text" id="setup23"></td>
-						<td><input type="text" id="setup24"></td>
+						<td id="board20" class="final">FREE</td>
+						<td id="board21" class="final">FREE</td>
+						<td id="board22" class="final">FREE</td>
+						<td id="board23" class="final">FREE</td>
+						<td id="board24" class="final">FREE</td>
 					</tr>
 				</table>
-				<button class="goback">Go Back</button>
-				<button id="grid-create">Create</button>
+				<br/>
+				<br/>
+				<button id="setup-return">Change Data</button>
 			</div>
-		</div>
-		<div id="board">
-			<table>
-				<tr>
-					<th>B</th>
-					<th>I</th>
-					<th>N</th>
-					<th>G</th>
-					<th>O</th>
-				</tr>
-				<tr>
-					<td id="board0">FREE</td>
-					<td id="board1">FREE</td>
-					<td id="board2">FREE</td>
-					<td id="board3">FREE</td>
-					<td id="board4">FREE</td>
-				</tr>
-				<tr>
-					<td id="board5">FREE</td>
-					<td id="board6">FREE</td>
-					<td id="board7">FREE</td>
-					<td id="board8">FREE</td>
-					<td id="board9">FREE</td>
-				</tr>
-				<tr>
-					<td id="board10">FREE</td>
-					<td id="board11">FREE</td>
-					<td id="board12">FREE</td>
-					<td id="board13">FREE</td>
-					<td id="board14">FREE</td>
-				</tr>
-				<tr>
-					<td id="board15">FREE</td>
-					<td id="board16">FREE</td>
-					<td id="board17">FREE</td>
-					<td id="board18">FREE</td>
-					<td id="board19">FREE</td>
-				</tr>
-				<tr>
-					<td id="board20">FREE</td>
-					<td id="board21">FREE</td>
-					<td id="board22">FREE</td>
-					<td id="board23">FREE</td>
-					<td id="board24">FREE</td>
-				</tr>
-
-			</table>
-			<button id="setup-return">Change Data</button>
 		</div>
 	</body>
 </html>
