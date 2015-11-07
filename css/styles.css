@@ -1,17 +1,76 @@
+body {
+	margin: 0;
+	padding: 0;
+}
 #container {
-	font-family: Helvetica;
+	font-family: Helvetica, sans-serif;
 	text-align: center;
+}
+a {
+	color: black;
+	text-decoration: none;
 }
 #textarea-data{
 	resize: none;
+}
+textarea {
+	border: 2px solid #ccc;
+	border-radius: 5px;
+}
+input {
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	padding: 5px;
+}
+#header {
+	background-color: #ccc;
+	width: 100%;
+	height: 30px;
+}
+#ghpropic-container {
+	width: 5%;
+	height: 30px;
+	float: left;
+}
+#ghpropic-container:hover {
+	background-color: #ddd;
+}
+#ghpropic {
+	width: 30px;
+	height: auto;
+}
+#header-container {
+	width: 90%;
+	height: inherit;
+	float: left;
+	font-weight: bold;
+}
+#about-container {
+	width: 5%;
+	height: 30px;
+	float: left;
+	font-weight: bold;
+}
+#about-container:hover {
+	background-color: #ddd;
+}
+.header-par {
+	margin: 8px 0 0 0;
+	width: 100%;
+	height: inherit;
+	text-align: center;
+	float: left;
 }
 table {
 	margin-left: auto;
 	margin-right: auto;
 }
+th {
+	font-size: 1.2em;
+}
 .final {
 	background-color: #ddd;
-	padding: 25px 25px 25px 25px;
+	padding: 25px;
 	text-align: center;
 	width: 20%;
 	border-radius: 5px;
@@ -21,6 +80,15 @@ table {
 }
 .done, .done:hover {
 	background-color: #f44;
+}
+#todo-container {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+#board {
+	margin-top: 40px;
 }
 button {
 	font-family: inherit;
