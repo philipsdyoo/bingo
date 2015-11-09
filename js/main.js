@@ -53,6 +53,7 @@ $(document).ready(function() {
 		}
 		$("#setup").hide();
 		$("#board").show();
+		$(".final").removeClass("done");
 	});
 	$("#textarea-create-nofree").click(function() {
 		var data = $("#textarea-data").val().split("\n");
@@ -75,6 +76,7 @@ $(document).ready(function() {
 		}
 		$("#setup").hide();
 		$("#board").show();
+		$(".final").removeClass("done");
 	});
 	$("#grid-create").click(function() {
 		for (var i = 0; i < 25; i++) {
@@ -86,5 +88,16 @@ $(document).ready(function() {
 		}
 		$("#setup").hide();
 		$("#board").show();
+		$(".final").removeClass("done");
+	});
+	$("#textarea-data").keyup(function() {
+		var data = $("#textarea-data").val().split("\n");
+		var num = data.length;
+		for (var i = 0; i < data.length; i++) {
+			if (data[i] == "") {
+				num--;
+			}
+		}
+		$("#counter").text("# of items: " + num);
 	});
 });

@@ -1,14 +1,15 @@
 # bingo
-Create custom and interactive BINGO boards
+## Create custom and interactive BINGO boards
 
-Still a work in progress. Coming soon!
+Great for streams, group game nights, and more!
 
-TODO:
+Still a work in progress. Finished version coming soon!
 
-Frontend styling and design
+New features are being thought of and implemented as I and some friends test and play with the board.
 
-Possibly a printer-friendly page for making multiple randomized boards
+Check out the work so far: http://philipsdyoo.github.io/bingo/
 
-Maybe RWD so that you can use the board on the go or with a smartphone/tablet
-
-Add a MIT Open Source License file
+## TODO:
+* Frontend styling and design
+* Possibly a printer-friendly page for making multiple randomized boards
+* Maybe RWD so that you can use the board on the go or with a smartphone/tablet
