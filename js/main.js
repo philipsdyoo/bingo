@@ -1,3 +1,6 @@
+var airhorns = new Audio('./sounds/airhorns.mp3');
+var yay = new Audio('./sounds/yay.mp3');
+
 $(document).ready(function() {
 	$("#setup-textarea").hide();
 	$("#setup-grid").hide();
@@ -34,8 +37,11 @@ $(document).ready(function() {
 			$("#setup-return").show();
 		}
 	});
-	$("#call-bingo").click(function() {
-		//Does nothing for now
+	$("#call-bingo").mouseup(function() {
+		airhorns.play();
+		setTimeout(function() {
+			yay.play();
+		}, 1000);
 	});
 
 	$("#textarea-create-free").click(function() {
