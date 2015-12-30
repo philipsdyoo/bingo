@@ -1,5 +1,5 @@
-# bingo
-## Create custom and interactive BINGO boards
+# Customizable and Interactive BINGO Boards
+## About
 
 Great for streams, group game nights, and more!
 
